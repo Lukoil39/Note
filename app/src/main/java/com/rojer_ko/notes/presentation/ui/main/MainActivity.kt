@@ -20,7 +20,7 @@ class MainActivity : BaseActivity<List<Note>?, MainViewState>(), LogoutDialog.Lo
     companion object {
         fun getStartIntent(context: Context) = Intent(context, MainActivity::class.java)
     }
-    
+
     override val model: MainViewModel by viewModel()
     override val layoutRes: Int = R.layout.activity_main
     private lateinit var adapter: MainAdapter
